@@ -4,8 +4,6 @@ import com.saul.app.demo.Models.book;
 import java.util.List;
 import org.springframework.data.jpa.repository.Query;
 
-// This is just the repository
-
 public interface bookRepo extends JpaRepository<book, Long> {
     List<book> findByGenre(String genre);
 
